@@ -1,4 +1,10 @@
 <h1>Bookers</h1>
 
+<th>Title</th>
+<th>Body</th>
 
+<% @books.each do |book| %>
+  <span><%= book.title%></span>
+  <span><%= book.body%></span>
+<% end %>
 
