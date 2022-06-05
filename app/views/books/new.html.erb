@@ -1,3 +1,7 @@
+<!-- 一応残しとく -->
+<%
+=begin
+%>
 <h1>New book</h1>
 <%= form_with model: @book, url: '/books', method: :post do |f| %>
   <h4>Title</h4>
@@ -6,3 +10,6 @@
   <%= f.text_area :body %>
   <%= f.submit 'Create book' %>
 <% end %>
+<%
+=end
+%>
