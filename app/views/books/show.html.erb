@@ -3,5 +3,5 @@
 <th>Body:</th>
 <span><%= @book.body %></span>
 
-<span><%= link_to 'Edit', '/edit' %></span>
-<span><%= link_to 'Back', '/books' %></span>
+<%= link_to 'Edit', edit_list_path(@book.id) %> | <%= link_to 'Back', '/books' %>
+
