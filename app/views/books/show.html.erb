@@ -1,4 +1,9 @@
 <th>Title:</tr>
+
+<% if flash[:notice] %>
+  <p><%= flash[:notice] %></p>
+<% end %>
+
 <span><%= @book.title %></span>
 <th>Body:</th>
 <span><%= @book.body %></span>
